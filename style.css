@@ -71,7 +71,12 @@ li{
     width: 200px;
     position: absolute;
 
+
+}.list p{
+    display: none;
 }
+
+
 #ddf{
     position: relative;
 }
@@ -96,6 +101,40 @@ li{
     top: 30%;
     opacity: 0.5;
 }
+
+
+@media (max-width:800px)
+ {
+    .nav2 form{
+        display: none;
+    }
+    
+}
+@media (max-width:600px)
+ {
+    .nav2 .list p{
+        display: block;
+        position: absolute;
+
+    }
+    .nav2 .list li {
+        display: none;
+    }
+    .list{
+        display: block !important;
+    
+
+
+    }
+    .nav2 .list p:hover~li{
+        display: block;
+        
+    } 
+    
+}
+
+
+
 .firstpart{
     height: 400px;
     background-image: url(back.jpg);
